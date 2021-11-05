@@ -1,0 +1,13 @@
+overload:
+ enabled: true
+ package: yandextank.plugins.DataUploader
+ token_file: "token.txt"
+phantom:
+ address: 37.139.34.190
+ load_profile:
+  load_type: rps
+  schedule: line(1000, 50000, 5m)
+ ammofile: ./ammo_get.txt
+ ammo_type: uri
+telegraf:
+ enabled: false
